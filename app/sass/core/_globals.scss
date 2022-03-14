@@ -1,0 +1,32 @@
+@use "../util/variables-clrs" as clr;
+
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	place-content: center;
+	place-items: center;
+	background: clr.$veryDarkBlue;
+	font-size: 15px;
+}
+
+h1,
+h2,
+p,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}

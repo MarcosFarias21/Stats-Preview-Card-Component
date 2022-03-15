@@ -1,17 +1,4 @@
-@use "./interface/forward-bp";
 @use "./core/forward-core";
 @use "./layout/forward-lyt";
 @use "./util/forward-util";
-
-@use "./util/mixins" as mxn;
-.hide-for-mobile {
-	@include mxn.breakpoint-down(63.9375em) {
-		display: none;
-	}
-}
-
-.hide-for-desktop {
-	@include mxn.breakpoint-up(64em) {
-		display: none;
-	}
-}
+@use "./interface/forward-ui";
